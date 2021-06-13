@@ -1,0 +1,169 @@
+body{
+    background: var(--preto);
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size:13px;
+    color: white;
+}
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header .logo-netflix{
+    padding-left: 10px;
+    height:45px;
+    width:10%;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*cores padrões do site*/
+:root{
+    --vermelho:#E50914;
+    --preto: #141414;
+}
+
+/*cor dos links quando estáticos*/
+header nav a{
+    text-decoration: none;
+    color:#fff;
+    margin-right: 10px;
+}
+
+header nav{
+    margin-right: 50%;
+}
+
+/*cor dos links quando passo o mouse sobre eles*/
+header nav a:hover{
+    color:rgb(194, 194, 194);
+}
+
+/*banner da serie em destaque com titulo e a sinopse da serie*/
+.filme-principal{
+    font-size: 15px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url('./img/onedayattime.jpg');
+    height: 400px;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+/*estilo do texto da sinopse*/
+.filme-principal .sinopse{
+    margin-bottom: 60px;
+    margin-top: 10px;
+}
+
+/*estilo do titulo da serie principal, em destaque
+h3 .titulo{
+    height: 10px;
+    width: 10px;
+*/
+
+/*botões abaixo da sinopse*/
+.botao{
+    background-color:white;
+    border:none;
+    color: black;
+
+    padding: 10px;
+    margin-right: 5px;
+    font-size: 12px;
+
+    cursor: pointer;/*ponteiro em cima do botão*/
+    transition: .3s ease all; /*tempo de transição ao passar o mouse*/
+
+    border-radius: 4px;
+}
+
+/*estilo do botão ao passar o mouse*/
+.botao:hover{
+    background-color:rgba(165, 163, 163, 0.5);
+}
+
+/*configuração do ícone linkado nos botões*/
+.botao i{
+    margin-right:5px;
+}
+
+.filme-principal .container{
+    margin-left: 20px;
+}
+
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display:block;
+    border-radius: 10px;
+}
+
+.carrosel-filme{
+    margin-top:5px;
+}
+
+.populares{
+    padding: 3px;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.searchbotao{
+    border-radius:70%;
+    background-color: #141414;
+    border-top: #141414;
+    border-bottom: #141414;
+    border-left: #141414;
+    border-right: #141414;
+    color: white;
+    height: 30px;
+    width: 40px;
+    margin-right: none;
+    padding-right:40px;
+    
+
+}
+
+.searchbotao:hover{
+    cursor: pointer;/*ponteiro em cima do botão*/
+}
+
+.notification{
+    border-radius:70%;
+    background-color: #141414;
+    border-top: #141414;
+    border-bottom: #141414;
+    border-left: #141414;
+    border-right: #141414;
+    color: white;
+    height: 30px;
+    width: 40px;
+    margin-right: none;
+    padding-right:10px;
+    
+}
+
+.notification:hover{
+    cursor: pointer;/*ponteiro em cima do botão*/
+}
+
+.icone{
+    position:left;
+    justify-content: space-around;
+    border-radius: 30%;
+}
+
+.icone:hover{
+    cursor: pointer;/*ponteiro em cima do botão*/
+}
